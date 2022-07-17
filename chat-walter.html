@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat - Kokoa Clone</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="chat-screen">
+    <div class="status-bar" id="chat-screen__status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-lg fa-battery-full"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html">
+          <i class="fas fa-angle-left fa-2x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Walter Isaacson</h1>
+      </div>
+      <div class="alt-header__column">
+        <i class="fas fa-search fa-2x"></i>
+        <i class="fas fa-bars fa-2x"></i>
+      </div>
+    </header>
+
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Tuesday, June 30, 2022</div>
+
+      <div class="message-row message-row-own">
+        <div class="message-row__content">
+          <div class="message-row__content__info">
+            <span class="message-row__content__info__bubble"
+              >Hello. Mr. Isaacson. You observed Steve Jobs and wrote about him.
+              What do you think is the best way to know who I am?
+            </span>
+            <span class="message-row__content__info__time">16:37</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row">
+        <img
+          src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUWEhgVFRUYGBgaHBoZGBgaGBoYGRgYGBgaGhgaGBgcIS4lHB4rIRgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHxISHjQrJCs0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIALcBEwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAEAAIDBQYBBwj/xAA9EAABAwEFBgMFBQcFAQAAAAABAAIRAwQFEiExIkFRYXGBBpGhEyMyUrEUQsHR8BUkMzRi4fEHFnKCkrL/xAAZAQADAQEBAAAAAAAAAAAAAAAAAQIDBAX/xAAlEQACAgICAgICAwEAAAAAAAAAAQIRAzESITJBBFETIhRhcVL/2gAMAwEAAhEDEQA/ADaVlGFV9qoYXBE0rQcKErVi8rhxXxR0S2danQk0J0LUk5C7C7C7CQHIShOhdhMBjgqvBNUBWzhkq+hUDa4JSYw220z7MiNyxZEEr0q0vYaZPJZZ1CmSp5UZTjFyXIoKI2h1CPvFkBpRosTNQVZ2bw8+tBecDNxIzd0ChycmdeNY4q0ZBG2O661XNlN7hxDTh/8ARyXo9guSzUYwUw9/zug598h2CsHVyNXtaOAj6mFdFSzf8o82d4XtQz9kT0LT6Smi6azCMVN4HHCV6FUtQGjnE7hik+QBUdKs8kkuMDXT6wj0ZucpbMi1sCFDaGLaPpU35upt6mQY/XGFTXhdrCC6kdNWEz/5P4Fcv4pRdo3hlT6ZiLU0tfIRlJwexPt1nlumYQNieWuwlbXyj/aHqVemD2mnhdCCrN3q3vGnLZVQVtjlaswzQp0Cl6b7RS1aW8IchbpnHKLRurvd+7hSUxkoruH7u1T0xksbNloRCRCcuEIAjITHBTEKMpgVVpHvFNbv4B6JlpHvFJeA9yeiqO0D0Y+Ul2El6BzWeoMGyUHT1KPaNgoCh8RXkYvFHXLYW0J4C41PAVknIXYXYShAxQlC7C7CBDHDJU9Ye8Cu3DJU1ce8CALW0j3R6LHMY5zobJMrZWke6PRP8GXUINd8SScHITGLqTkOhSMZx5SSH+HrgwD2lWXP+6zcP+XPkrOpa8Jicb9/yt5DkFJeNqLGQ3IuyB+Vu89Ss3UtO4HLfz5KZSo6cWP0i/ZeDQNup2Gnp/dMFuY84WHuZaPNZ72JfmfLMpwpkaAgcOSz5HR+A0LKtNpjNx5DCPPKR1RjWtwhzjhb29BoFk2WlzDsM0zkjX8lA+vaKxhzsuAyH90+SF+F2Wl9eIMUMonC2fiGruJB3figLFanh2bj14ou7/D+hcc0fXudo0PdJtlqEUqK632cEYwdRmP7rO2iy7WIK/qVCxxY8SEJbKWF8DTIjoRKUnXaHHfFlZaGbBVC4ZrWV2DAeiytQbRVYJcrMvlSjGrIiFE+nKIIXIXSjilljRq7AIs7VLT0TLL/AC4UtEZKC1o7CaVKQmkIGREJpClITCEwKq1fxE+3fwD0XLZ8afbh7g9FUPJBLRj0k6El6Jynp7TsFB2cZlGNbsoWzjMryMfijrlsLaE4BcaE8KxHAE4BKF2EgEuwugJQgBrhkqeuPeBXThkqeuPeDqgC4fTBYAdDr03q2sNQCmGjKM4HGIA7SFWgbOXBE0HhjTv1E85kn6JMaQJftbPBO6T03frqqik0TKOvWoDJjMnXlwQNH6b1hPZ34Y/qWdmLSrFjWj/CpaT8JnsUb7ccT5pRZs1YRWs7DuXKNna3QQoPb/qUz7QB/lDkJRLVlSFI6sIOipha2jf6pOtTd6akS4kd7txNJ3jOOi5abPjs7Ko1ADSP6dAZ7eoSe/LNWdlsw+yPZugubyMz5ZBNdxaMsn6tMytvfhpnosWK5k9Vo/Edpwtwb1llfxYVFt+zi+XJNpfQex8rqDovgoxdLVHC1RrbN/LhS0RkorMP3cKeiMgszsjpDiE0hPhcIQMjITCFKQmEIAqrcNtSWwe4PRMt421LbB7g9FcPJBLRj4XFPgSXonIelgbCBs2pR87BQNkGq8fH4r/DslsMaE8JrQnhWIQXQknBMDgC6AlC7CQHCFTWge8HVXRVNaP4g6oAvaY2QgrTVOIRxJ/XdGOyYP1qq+oyCXcI+miTKiD2p8iOGpQlB+ucCVLaCMMKGhTJyiTrnoBzXPI78Wgmm9nGfUohrhuae7THmoWVSzTDxyKf9vcBmPVI1se94+UeSGrPILYAIOR0yUxt2LUD0KYazAYDQOwUjJGvZGjTygJ3tY3ED/iQPomfbHD4fLTySNofq4ty3YtxVCboc4TmMumiszaMNEcxH4fmqpmZxsIjR7Z9QOIRTHzTLYnCf75qoujDKrRhrTZatV5dGW5cFwvWwDQNE0rL+VJKomf8aLdvsxr7leEwMIyOq0t521rGnPNZdlYvcSV1Yck5q5aOP5WOEVUdmys/8uFPRGQUVAfu7VNRGQVhHSHEJpUhCaUyhhCYQnkLhCBFTbxtqa0t9yeijvAbQU9Ue67Ko+SCXiZj2aSN9mku6zjo2xHuygbHv6o93wFBWLf1XmY/FHbLYaAnBJqdCskQCSQC6EAJdhIBdSA4VTWkgVATkArshZ+92zjH9LvolJ0i4R5SS/suqdpa9sAjLnrHCNULVcSshdTHwHtJEnQbwNfyWppulrnfKPqs7emduTFGPcQWo7OT/iEDbLfgyGvDmrB7JE8eSp7U9rCXu2iNAI1Wa7ZTtLoAq1quoBKip3i8O2iQobwvS0RLdgHUAQf+x1QNNz3DEfMTn2Oq6VD9bdGLn+1KzSUbwM/jx7p32ojM6nMKjsxcXDLI5clpq9yP9iXichMdli4pM3jK0VVpvRwzyCrheL3HImOIBOSCc1zjmCu2ehWxiMY5iQI5QuiOOKRzSySb6RorDaHiHsfiG8jUdQtjdbsQcY3SRxjUZrE2ShUFQFwkEFriNYIyxxv65rZ3c8U2guyABnyPPiuedJm1NoEpXm2sThaAGwAeKEvC8WsGuarLXU9hjLfvubgH9Lg4nyII7KhrVXOMuMqI4OcuT0R8nMofrHY622pz3SVyy6qFEWVq7klFUjypycrbNzS/l2qahoFFT/l2qegNkLM6I6Q4hNKkKaQgZGUxSkJhQBWXiNoIhw932UF4jaCIaPdqo7QPRV+zSRWBJdVnNRo3j3fZBWLf1R9eAw9EDYdFwxVJI6W+w4LoSCcAqEJdSXUAJdSXUgOKjtzJfh4yPRXsKntH8UdUDTp2Z+0nAxjADk3OOJ1VhdtNzbO17zJdJHJu4HnkiatnxOdTgzm5p4gZwme0921vCB5ZLnb9Hqy7imhWZ865JWqytBxFs+v9lAHxmiqNpxDCY7qdCStFNaWO3RHAw6OWeirKjnTHHRrQB6BairdjHmQI6GPRS2a52U9qNric/wDC0U6QcSru67IYHv8AinTgtldr2upQRpIIVPZS10gGYMclb2angblvUW27HxSVHn173ZgcXtGySZbwz16IOzlmW0RyW/vOzsZBfkCY7nSULWuCg7awieI0PZWpuqZPFegO5QC2BpOZ4qwvBgcMDciQ4DrhJHrCBxGmIaIzg/n6LtCqXET0WdlONGcvsnBSDtYd30j6lU61XiuyOc9mAYhDiI3NOHCPQqgN3VPkK7MbSijyfk28rA4R1BkAJ1G7X72FECyP+QqnJHJK9GsYP3dqnofCFFgIoNBU1AbIUHXHQ8phCeQuEIGRlNhPITYQBWXnqETTHuwoLzGYRVAbATWweiDAkp8CS35GNA9C93P2cBEqzsbICe2zNG5ENYuc1OhOXAE4IAQXQkupAILoSXYQBwrP2+sGVAXaLRFMbcLq+jJHE5DzKEBVfamVDsOExnnw3/rkgKjHAkufiJ9AJha2yeBmh+J7g0D5DJPLMR9UN4puylSbTFNsTixGZLjswSfNRPG/I7MOdVxezLPbI/XNNs5g5qRQOfmsWjqiWjLQB+slWXneTycDMycslDWtBAgKS6aAze7Xd0QlXbNL+ixsGFtNjRkYkzri3qzF4tAAJE+qyt8l84qbsPEQCJ7hVj7ydkHAg8og+apRb7RDkls2161mVKb2zq0wOBAlsdCAqC671c3YfnGSguuoXOxO0iAOHM8SpLxsjfjbrv5xqivTCLC7wrZmNCu0QAADpv7oMO2Wzv8AorGz2T2kt0AGum9JRvomcuKssqVvpBoBIyCd+0KPFvoq0+Hmc00+Hmc10JUjzJS5NstPt9HiE37ZR4hVZ8PM4nzTf9vt4nzTF0WVqtTHNhpUtAbIQllutrEe1kIAaVwp5TCEANKanlMKAK29DmFPZqrcAkhR3hZS8awqx10P+cpjLv2zeISVF+yHfOUlRPRsQE4BcATgoAQTgkFZXfc76mfwt+Y7+g3oSbC0VwVrZbjqvEwGD+rI+QC0VguinTghuJ3zOzPbcFYB6tQ+yXL6M/T8MD71Q9m/iSp2eHaQ1c93kB6BWz3wmFx+6Z5KuMSbYNTu6i3RjO4k+sohzQBAELrajTrkfJce8aSmBBjyWO8YEkNO5pIP/YGP/krW7is/elH2lGsBqMJHVm1HcGO6iauNGuJ1JMwOLzUFfI91I8wVDbMsx1XJR6i6YJXEuE6HXoiKVvaDhbu3DghbbmWgb1E+62uzzB4gkEd00l7G79FhWq4hnA5kqqq2YTOIQgbRd1YHZcTyORQpoVtNr0/JbRgvTMpSa6cWaKz1MOhB7rla2TlOiqrHdzj8T3dAfqUZXsoaBhUyjFMpSk1dUWtjGJjOhHkV6r4d8OUmWdpqsxPdtESRE/CIB4R3JWE8D3d7WuxrhLWDG/pOQ7mAvYWxMncnhj22zk+Vk1FFY/w3Z3DJrmcw4/R0qkvHw1UYJYcbeAEOHbf2WvfaOCYy0iYW7jE5E2ebObGREFMLV6TbbrpVfjYCfmGTvMa91mbx8LvbLqZxj5Tk78j6KHBopSRnCE0hSPYQSCCCNQciOoTCpKGFMKeU0oAaUwqQphQBGQmkKQphQAyFxSJJgWQTguBXfh+7C9we4bA0n7xH4BCV9E3RPclzyQ+oObWn6n8lpXtw9F3BmCpHaLZKiG7ONOSFqBEU9ELaH7oPJDBDgclEckynamnI5HoZkLr6mcR5mEh0PLMQ5plOnhOadSqiQNDvEqV9RpB48sygCGo1VFibFSqDvc1w6YQ38CrQtyzQDKJFRz5yIDcPTOR5qWNHnviSw+xrEAbLtpnTeO2nkquttM6L0LxPdwrU4HxjNp57x0P5LzeS1zmOEHQg8lzyjTPRwz5RX2hjGYh0UlQx0UVnqAEjjEowETmFm+jeLTK201oCDdaHHor2vZGHTP8ABBuu5upCpSRVS9Atnq7kfZ6WOAeKIs9nYzMAfVW3h67BWrwcmDaf03jvp5peTpETlxTbNZ4Au/BRdUI2qhkcmNyZ55nyWwY7ZKqLM6NMhoAN0aKxslWZkyuuCpUeTNuUrOF4KiadtdfkXIdj5fkVRKRdMdknygqFYHIOzG5ENq7immKgS8rqp1hDxDoyeMnDvvHIrE3tdL6DtoS0/C8aHkeB5L0NrgRkU2tTa9pa4AtcIIKUopjUqPLCEwrRX34edSl7CXM3j7zevEc1nyFk01s0TsYU0pxXCkMYUwhSFMKAGQupQknYFqxhJAA1WzDXMDcJ2IGXALM+HoeXPGjRh7u4dp81qLI+acH7uyem70hVFdGciwY87+391K8bOSrKeeyTtDQ8lJTr7nTPDitLJome+SoqokTwT3nfv4LjnDVAAbWe8kRBz7p1emZDknkagymvfIUlDncVNTULTIXKL4MIAmfqquu73nZWtQKqtohwKTCInNxtjeMisp4huNtTaGy8b9zuTvzWne/C4O3HJ34FOtNnDhKlqzWEnF2jx23UnMdDwWuG/ce6ZSvADIkHgvQrzusOBBAPUSsD4ku6nRaXGGk6AauPANWfD0dKzLZ1ltI0z6FROtb3cVnaF5RkQe2atrlr+3qtpfDPwzvjM99U3ia9Fr5KfssrGx73hoBc4mA0Zk/kvVPDV2ijTDTm90F5GnJo5D81WXJdTKQ2G7R1O/zWsslPCM+6cYd2c+bK5dA1mOXX80fZ6YgnegaGQ6I+ynJaI5mR1hxz9VBR+KAiLSOCFsx2k2NHLO/DU75q6dmFRVX+8PVXDHzTBQhSQ91ZrWyVJZ64dpoqy0GSG91PZjhPL6lOxV0GVjmBPZYrxLdwpvD2iGP3bmv3jodfNa9wl7eX4oO+bJ7WhUpj4iJZ/wA25t9cu6JK0EXTPPi5NLgquo94JDpBBgg5EEaghQmq7isDUuC4JkhVJqu4qN1d3FA6LnEkqX27uKSdiPRPDdDBZ2De8l7u+TfSFbUH4asH4XiD13KKzU8MAaNaGjoAn2k5A8IPqtTMMrMOo1Ca/abI+Ia/miKLw5oOspjqcOkJiIqVckQNd5UFtcSIByO9dtIwOxDQ+hUbmg7Tj0A/BSNA1mcWOg6FGYtQgqzuSIL9DxAQimEU3ZLrjnPFQUX5qbiPJMkJNTJAW9ktlENdITajcihgivbtNhOs1Xcf0d4UDXYXEc0nDa659x/b6KSyr8YX6yzU4Ax1XjYZuA+Z/AfXzXjN8Wh9V/tKji55O85AcGjcAtn4vs7/ALW97/vxgO7CAAB24LHXpTioBynz/wAJxa2iuPRWOZmtL4Hu01bZTAMYD7QnfDDoOpIHdZ8Nkr0vwb4cLG0rSKhZUjEBhBbgdo1wyJBEefJXJ9AopWz0eyUA3PejnThMawfoq6x2sPxDR7DD28DxHEHUFEU6xJIIWaaRmyIjCIVjZfhCrn5lWFiOUFNA9EVd0oezfEi7YxCUcj3TYIGrnbPUqwstUxCr7V8bupRNlcp9lPQSPiJRDHGMoLd44IRrs88hJzU0CZHpoVSICaZ2lI/4lAw5qR5zCoRlPHfhZ1opmtZ4FoYM2aCs0fdnc/gd+h3EeHVb4qNcWuBaQSCDkQRkQQdCCvqJq84/1O8Bi0Nda7OyK7RNRgH8Zo3gfOB5jLWEuMXtFLJJKkzyH9sv4pfth/FQWC63VJgxCLPh1/zBHGJXKZD+2XpKb/blTiFxHGAc8h9FUW5KV9LFlxSSQZkllbhlvkpiUkkCILQ0EQd6rKDyCWHUaHluSSSZSHV3CIAz3rjM6Y7/AFKSSkZyznNFOOhSSTE9nZgqQ5hcSTAqrcyDKiY+QDvBHpmkkpK9Ge8T021avsm6MJJcdcRGg5AfVeU3mJrvMyMRAn+nI9sikknHotA7SB58Fu/AV/nELM/eCaZ4AZlp7AkeXBJJUy3o3tUEPFRuTiMJPEcHDfqPJWFG0QMwZ03bu6SSz9mY8Vxwj9dURRtDeJ9UkkxUiWpaGkfEe8oYvG78fxXUkMEgWtJcTqOO9TWV5xRGWSSSXsfoJYCBIg8Qd6aK8GAI5JJKyEWFDPNPqnMJJKheyXPIgxkmm0EaieYyKSSBHkv+qPhv2LjbrPDabnAV2CBhqEwHtG8OOoG/PeY81dbX/OUkkG0PEX22p85SSSSKP//Z"
+        />
+        <div class="message-row__content">
+          <span class="message-row__content__author">Walter Isaacson</span>
+          <div class="message-row__content__info">
+            <span class="message-row__content__info__bubble"
+              >One way to remember who you are is to remember who your heroes
+              are.</span
+            >
+            <span class="message-row__content__info__time">18:07</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row message-row-own">
+        <div class="message-row__content">
+          <div class="message-row__content__info">
+            <span class="message-row__content__info__bubble"
+              >I appreciate your answer, Mr. Isaacson</span
+            >
+            <span class="message-row__content__info__time">18:43</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." />
+        <i class="far fa-smile fa-lg"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+
+    <div id="no-mobile">
+      <span
+        >Your screen is too big. Please make sure your screen is no wider than
+        790px :)</span
+      >
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/2b1d4fff4f.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

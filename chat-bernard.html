@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat - Kokoa Clone</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="chat-screen">
+    <div class="status-bar" id="chat-screen__status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-lg fa-battery-full"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html">
+          <i class="fas fa-angle-left fa-2x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Bernard Werber</h1>
+      </div>
+      <div class="alt-header__column">
+        <i class="fas fa-search fa-2x"></i>
+        <i class="fas fa-bars fa-2x"></i>
+      </div>
+    </header>
+
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Tuesday, June 30, 2022</div>
+
+      <div class="message-row message-row-own">
+        <div class="message-row__content">
+          <div class="message-row__content__info">
+            <span class="message-row__content__info__bubble"
+              >Hello. Mr. Werber. How can I improve my imagination?
+            </span>
+            <span class="message-row__content__info__time">16:37</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row">
+        <img
+          src="data:image/jpeg;base64,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"
+        />
+        <div class="message-row__content">
+          <span class="message-row__content__author">Bernard Werber</span>
+          <div class="message-row__content__info">
+            <span class="message-row__content__info__bubble"
+              >The best way to renew thought is to go outside the human
+              imagination.</span
+            >
+            <span class="message-row__content__info__time">17:22</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row message-row-own">
+        <div class="message-row__content">
+          <div class="message-row__content__info">
+            <span class="message-row__content__info__bubble"
+              >Thank you so much, Mr. Werber</span
+            >
+            <span class="message-row__content__info__time">18:43</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." />
+        <i class="far fa-smile fa-lg"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+
+    <div id="no-mobile">
+      <span
+        >Your screen is too big. Please make sure your screen is no wider than
+        790px :)</span
+      >
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/2b1d4fff4f.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
